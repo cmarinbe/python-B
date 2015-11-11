@@ -1,0 +1,365 @@
+# setting LC_ALL to "C"
+# --> Including file '/home/kdungs/cmtuser_GEC/Brunel_v44r9/Sft/FstTools/options/SftWithVPUTFT_kevin.py'
+# --> Including file '/cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/AppConfig/v3r187/options/Brunel/MC-WithTruth.py'
+# <-- End of file '/cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/AppConfig/v3r187/options/Brunel/MC-WithTruth.py'
+# --> Including file '/home/kdungs/cmtuser_GEC/Brunel_v44r9/Sft/FstTools/options/Sft.py'
+# <-- End of file '/home/kdungs/cmtuser_GEC/Brunel_v44r9/Sft/FstTools/options/Sft.py'
+# <-- End of file '/home/kdungs/cmtuser_GEC/Brunel_v44r9/Sft/FstTools/options/SftWithVPUTFT_kevin.py'
+# applying configuration of FstConf
+# /***** User FstConf/FstConf ************************************************************************
+# |-MinVPClusters   = 3
+# |-TStationType    = 'FT+VeloUT'  (default: 'IT+OT')
+# |-ForwardMinPt    = 500.0  (default: 1250.0)
+# |-MinVeloClusters = 9
+# |-Compare         = False  (default: False)
+# |-TrackFit        = ''  (default: 'HltFit')
+# |-RootInTES       = 'Fst/'
+# |-FastDecoding    = False  (default: True)
+# |-MaxIP           = 9999.0  (default: 3.0)
+# |-MinP            = 10000.0
+# |-MaxChi2Ndf      = 1.5  (default: 3.0)
+# |-TTType          = 'none'  (default: 'ValidateTT')
+# |-MinIPChi2       = 16.0  (default: 9.0)
+# |-VeloType        = 'VP'  (default: 'Velo')
+# |-TStationHits    = 16
+# |-MinIP           = 0.1
+# |-MinPt           = 1700.0  (default: 1200.0)
+# \----- (End of User FstConf/FstConf) ---------------------------------------------------------------
+# applying configuration of Brunel
+# WARNING: You are running with non-upgrade detector Velo in upgrade mode.
+# WARNING: You are running with non-upgrade detector TT in upgrade mode.
+# WARNING: You are running with non-upgrade detector IT in upgrade mode.
+# WARNING: You are running with non-upgrade detector OT in upgrade mode.
+# /***** User Brunel/Brunel **************************************************************************
+# |-Persistency         = None
+# |-Histograms          = 'OfflineFull'
+# |-SkipEvents          = 0
+# |-DatasetName         = 'Brunel'
+# |-ProductionMode      = False
+# |-PackType            = 'TES'
+# |-NoWarnings          = False
+# |-WriteLumi           = False
+# |-DDDBtag             = 'dddb-20131025'  (default: '')
+# |-WithMC              = True  (default: False)
+# |-MainSequence        = ['ProcessPhase/Reco', 'ProcessPhase/Moni', 'ProcessPhase/MCLinks', 'ProcessPhase/Check']
+# |                     (default: None)
+# |-OutputType          = 'NONE'  (default: 'DST')
+# |-DigiType            = 'Default'
+# |-PartitionName       = 'LHCb'
+# |-VetoHltErrorEvents  = False  (default: True)
+# |-MCCheckSequence     = ['Pat']  (default: None)
+# |-InputType           = 'DST'  (default: 'MDF')
+# |-WriteFSR            = True
+# |-DBSnapshotDirectory = '/group/online/hlt/conditions'
+# |-PrintFreq           = 1000  (default: 1)
+# |-Detectors           = ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr']
+# |                     (default: ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr'])
+# |-EvtMax              = 10000  (default: -1)
+# |-Simulation          = True  (default: False)
+# |-Context             = 'Offline'
+# |-RecoSequence        = ['L0', 'HLT']  (default: None)
+# |-CondDBtag           = 'sim-20130830-vc-md100'  (default: '')
+# |-MCLinksSequence     = ['Unpack', 'Tr']  (default: ['L0', 'Unpack', 'Tr', 'Calo'])
+# |-UseDBSnapshot       = False
+# |-OutputLevel         = 3
+# |-InitSequence        = ['Reproc', 'Brunel']  (default: None)
+# |-DataType            = 'Upgrade'  (default: '2012')
+# |-SplitRawEventInput  = None
+# |-SplitRawEventOutput = 2.0
+# |-RecL0Only           = False
+# |-RawBanksToKill      = None
+# |-SpecialData         = []  (default: [])
+# |-Monitors            = []  (default: [])
+# \----- (End of User Brunel/Brunel) -----------------------------------------------------------------
+# /***** User RecSysConf/RecSysConf ******************************************************************
+# |-DataType     = 'Upgrade'  (default: '')
+# |-OutputLevel  = 3
+# |-Histograms   = 'OfflineFull'
+# |-Detectors    = ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr']
+# |              (default: ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr'])
+# |-OutputType   = 'NONE'  (default: '')
+# |-Simulation   = True  (default: False)
+# |-Context      = 'Offline'
+# |-RecoSequence = ['L0', 'HLT']  (default: None)
+# |-SpecialData  = []  (default: [])
+# \----- (End of User RecSysConf/RecSysConf) ---------------------------------------------------------
+# /***** User TrackSys/TrackSys **********************************************************************
+# |-FilterBeforeFit          = True
+# |-GlobalCuts               = {}  (default: {})
+# |-TrackPatRecAlgorithms    = []  (default: [])
+# |-ExpertHistos             = False
+# |-TrackExtraInfoAlgorithms = []  (default: [])
+# |-DataType                 = 'Upgrade'  (default: '2011')
+# |-ForceOldSeq              = False
+# |-TrackTypes               = []  (default: [])
+# |-OutputType               = ''
+# |-Simulation               = True  (default: False)
+# |-OldCloneKiller           = False
+# |-ForceNewSeq              = False
+# |-SpecialData              = []  (default: [])
+# |-WithMC                   = True  (default: False)
+# |-ExpertTracking           = []  (default: [])
+# \----- (End of User TrackSys/TrackSys) -------------------------------------------------------------
+# /***** User RecMoniConf/RecMoniConf ****************************************************************
+# |-DataType     = 'Upgrade'  (default: '')
+# |-Detectors    = ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr']
+# |              (default: ['Velo', 'PuVeto', 'Rich1', 'Rich2', 'TT', 'IT', 'OT', 'Spd', 'Prs', 'Ecal', 'Hcal', 'Muon', 'Magnet', 'Tr'])
+# |-Histograms   = 'OfflineFull'
+# |-OutputLevel  = 3
+# |-Simulation   = True  (default: False)
+# |-Context      = 'Offline'
+# |-MoniSequence = []  (default: None)
+# |-CheckEnabled = True  (default: False)
+# \----- (End of User RecMoniConf/RecMoniConf) -------------------------------------------------------
+# No Writer defined for DIGI
+# WARNING: ALL local tags of ['VP_UVP+RICH_2019+UT_UUT', 'FT_StereoAngle5', 'Muon_NoM1', 'Calo_NoSPDPRS'] data type(s) are added: {'DDDB': ['UVP+RICH2019+UUT-Local-20131021', 'VP+RICH2019+UT-Local-20130930', 'UT-Material-Local-20130930', 'FT-Stereo5-Local-20130830', 'Muon-Local-NoM1-201212003', 'Calo-Local-NoSPDPRS-20130704'], 'SIMCOND': ['Sim-UT-Local-20130930']}
+[?1034hApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to Brunel version v44r9
+                                          running on hlte0901 on Sun Jan 19 13:37:46 2014
+====================================================================================================================================
+ApplicationMgr       INFO Application Manager Configured successfully
+DetectorPersistencySvc                               INFO Added successfully Conversion service:XmlCnvSvc
+DetectorDataSvc                                   SUCCESS Detector description database: conddb:/lhcb.xml
+RndmGenSvc.Engine                                    INFO Generator engine type:CLHEP::RanluxEngine
+RndmGenSvc.Engine                                    INFO Current Seed:1234567 Luxury:3
+RndmGenSvc                                           INFO Using Random engine:HepRndm::Engine<CLHEP::RanluxEngine>
+TimingAuditor.TIMER                                  INFO This machine has a speed about   2.80 times the speed of a 2.8 GHz Xeon.
+TransportSvc                                         INFO Initialize the static pointer to DetDesc::IGeometryErrorSvc
+TransportSvc                                         INFO Recovery of geometry errors is  ENABLED
+BrunelSequencer                                      INFO Member list: ProcessPhase/Init, GaudiSequencer/PhysicsSeq, ProcessPhase/Output, with context 'Offline'
+Init                                                 INFO Member list: GaudiSequencer/InitReprocSeq, GaudiSequencer/InitBrunelSeq, with context 'Offline'
+InitReprocSeq                                        INFO Member list: TESCheck, EventNodeKiller, with context 'Offline'
+InitBrunelSeq                                        INFO Member list: RecInit/BrunelInit, EventCountHisto/BrunelEventCount, with context 'Offline'
+BrunelInit                                        SUCCESS ==================================================================
+BrunelInit                                        SUCCESS Requested to process 10000 events
+BrunelInit                                        SUCCESS ==================================================================
+RootHistSvc                                          INFO Writing ROOT histograms to: Brunel-10000ev-histos.root
+HistogramPersistencySvc                              INFO Added successfully Conversion service:RootHistSvc
+PhysicsSeq                                           INFO Member list: GaudiSequencer/CaloBanksHandler, GaudiSequencer/DecodeTriggerSeq, ProcessPhase/Reco, ProcessPhase/Moni, ProcessPhase/MCLinks, ProcessPhase/Check, with context 'Offline'
+CaloBanksHandler                                     INFO Member list: , with context 'Offline'
+DecodeTriggerSeq                                     INFO Member list: , with context 'Offline'
+Reco                                                 INFO Member list: GaudiSequencer/RecoL0Seq, GaudiSequencer/RecoHLTSeq, with context 'Offline'
+RecoL0Seq                                            INFO Member list: , with context 'Offline'
+RecoHLTSeq                                           INFO Member list: FstSequencer/RecoFstSeq, with context 'Offline'
+RecoFstSeq                                           INFO Member list: LLTCaloAlg, FstSelectGEC, VPRawBankToLiteCluster/FstVPDecoding, PatPixelTracking/FstPixel, PatPV3D/HltPVsPV3D, FstSelectVeloTracks, UnpackMCParticle, UnpackMCVertex, RawBankToSTLiteClusterAlg/CreateUTLiteClusters, PrVeloUT, FTRawBankDecoder, PrForwardTracking/FstForward, FstSelectForwardTracksPartOne/SelectFwd1, FstSelectForwardTracksPartTwo/SelectFwd2, with context 'Offline'
+COOLConfSvc                                          INFO CORAL Connection Retrial Period set to 60s
+COOLConfSvc                                          INFO CORAL Connection Retrial Time-Out set to 900s
+SIMCOND_0                                            INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/SIMCOND.db/SIMCOND"
+SIMCOND_0                                            INFO Using TAG "Sim-UT-Local-20130930"
+DDDB_5                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_5                                               INFO Using TAG "UVP+RICH2019+UUT-Local-20131021"
+DDDB_4                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_4                                               INFO Using TAG "VP+RICH2019+UT-Local-20130930"
+DDDB_3                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_3                                               INFO Using TAG "UT-Material-Local-20130930"
+DDDB_2                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_2                                               INFO Using TAG "FT-Stereo5-Local-20130830"
+DDDB_1                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_1                                               INFO Using TAG "Muon-Local-NoM1-201212003"
+DDDB_0                                               INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB_0                                               INFO Using TAG "Calo-Local-NoSPDPRS-20130704"
+DDDB                                                 INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/DDDB.db/DDDB"
+DDDB                                                 INFO Using TAG "dddb-20131025"
+SIMCOND                                              INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB_Upgrade/db/SIMCOND.db/SIMCOND"
+SIMCOND                                              INFO Using TAG "sim-20130830-vc-md100"
+EcalDet.Quality                                      INFO Found  9 problematic readout channel(s)
+HcalDet.Quality                                      INFO Found  2 problematic readout channel(s)
+LLTCaloAlg                                           INFO 192 Ecal and 54 Hcal front end cards.
+FstSelectGEC                                         INFO MultiplicityCutECAL = 50
+FstSelectGEC                                         INFO MultiplicityCutHCAL = 1000
+FstVPDecoding                                     WARNING The RawEventLocation property is obsolete, use RawEventLocations instead
+FstVPDecoding                                        INFO Using '[/Event/Other/RawEvent, Other/RawEvent, DAQ/RawEvent]' as search path for the RawEvent object
+DeVP                                                 INFO There are 208 sensors (left: 104, right: 104)
+MagneticFieldSvc                                     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r6/cdf/c1_onemap_down.cdf
+MagneticFieldSvc                                     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r6/cdf/c2_onemap_down.cdf
+MagneticFieldSvc                                     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r6/cdf/c3_onemap_down.cdf
+MagneticFieldSvc                                     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r6/cdf/c4_onemap_down.cdf
+MagneticFieldSvc                                     INFO Map scaled by factor 1 with polarity internally used: -1 signed relative current: -1
+FstSelectVeloTracks                                  INFO This algorithm is turned off via the DoNothing property.
+ToolSvc.PrUTMagnetTool                               INFO Start generation of VeloUT Bdl LUTs
+ToolSvc.PrUTMagnetTool                               INFO Generation of VeloUT Bdl LUTs finished
+ToolSvc.PrUTMagnetTool                               INFO Start generation of VeloUT deflection LUTs
+ToolSvc.PrUTMagnetTool                               INFO Generation of VeloUT deflection LUTs finished
+ToolSvc.PrVeloUTTool                                 INFO  MaxXSize           = 760 mm
+ToolSvc.PrVeloUTTool                                 INFO  MaxYSize           = 600 mm
+ToolSvc.PrVeloUTTool                                 INFO  MaxXSlope          = 0.35
+ToolSvc.PrVeloUTTool                                 INFO  MaxYSlope          = 0.3
+ToolSvc.PrVeloUTTool                                 INFO  centralHoleSize    = 28.1 mm
+ToolSvc.PrVeloUTTool                                 INFO  minMomentum        = 2000 MeV
+ToolSvc.PrVeloUTTool                                 INFO  minPT              = 200 MeV
+ToolSvc.PrVeloUTTool                                 INFO  maxPseudoChi2      = 1280   
+ToolSvc.PrVeloUTTool                                 INFO  distToMomentum     = 4.06357e-05
+ToolSvc.PrVeloUTTool                                 INFO  zMidField          = 1885.4 mm
+ToolSvc.PrVeloUTTool                                 INFO  xTolerance         = 0.35 mm
+ToolSvc.PrVeloUTTool                                 INFO  xTolSlope          = 350 mm
+ToolSvc.PrVeloUTTool                                 INFO  yTolerance         = 0.8 mm
+ToolSvc.PrVeloUTTool                                 INFO  YTolSlope          = 0.2
+ToolSvc.PrVeloUTTool                                 INFO  DxGroupTol         = 0.8 mm 
+ToolSvc.PrVeloUTTool                                 INFO  DxGroupFactor      = 0    
+ToolSvc.PrVeloUTTool                                 INFO  zMidUT             = 2484.6 mm
+ToolSvc.UTClusterPosition                            INFO APE set to 0
+ToolSvc.UTClusterPosition                            INFO Error Vec 0.257 0.245 0.277 0.208 
+PrVeloUT                                             INFO  InputTracksName    = Fst/Track/VeloFst
+PrVeloUT                                             INFO  OutputTracksName   = Fst/Track/VeloUTFst
+DeFTDetector                                         INFO ==> Initialize DeFTDetector
+SelectFwd1                                           INFO This algorithm is turned off via the DoNothing property.
+SelectFwd2                                           INFO This algorithm is turned off via the DoNothing property.
+Moni                                                 INFO Member list: , with context 'Offline'
+MCLinks                                              INFO Member list: GaudiSequencer/MCLinksUnpackSeq, GaudiSequencer/MCLinksTrSeq, with context 'Offline'
+MCLinksUnpackSeq                                     INFO Member list: UnpackMCParticle, UnpackMCVertex, with context 'Offline'
+MCLinksTrSeq                                         INFO Member list: PrLHCbID2MCParticle, with context 'Offline'
+Check                                                INFO Member list: GaudiSequencer/CheckPatSeq, with context 'Offline'
+CheckPatSeq                                          INFO Member list: PrChecker, with context 'Offline'
+Output                                               INFO Member list: , with context 'Offline'
+EventPersistencySvc                                  INFO Added successfully Conversion service:RootCnvSvc
+EventSelector                                        INFO Stream:EventSelector.DataStreamTool_1 Def:DATAFILE='/group/online/data_hlt/00031477_00000002_1.xdst' SVC='Gaudi::RootEvtSelector' OPT='READ'
+ApplicationMgr                                       INFO Application Manager Initialized successfully
+ApplicationMgr                                       INFO Application Manager Started successfully
+BrunelInit                                           INFO Evt 70751,  Run 3147884,  Nr. in job = 1
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+BrunelInit                                           INFO Memory has changed from 1661996 to 1674312 KB (12316KB, 0.741037%) in last 100 events
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+BrunelInit                                           INFO Memory has changed from 1674312 to 1694796 KB (20484KB, 1.22343%) in last 100 events
+PrChecker.Velo                                    WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Velo StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Velo                                    WARNING PrCounter:: The WARNING message is suppressed : 'Problem with MC associations for /Event/Fst/Track/Velo' StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: Problem with MC associations for /Event/Fst/Track/Forward StatusCode=FAILURE
+PrChecker.Forward                                 WARNING PrCounter:: The WARNING message is suppressed : 'Problem with MC associations for /Event/Fst/Track/Forward' StatusCode=FAILURE
+BrunelInit                                           INFO Memory has changed from 1694796 to 1694852 KB (56KB, 0.00330423%) in last 100 events
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+BrunelInit                                           INFO Evt 28251,  Run 3147714,  Nr. in job = 1001
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+BrunelInit                                           INFO Evt 71751,  Run 3147888,  Nr. in job = 2001
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: No VP RawBanks found
+FstVPDecoding                                     WARNING VPRawBankToLiteCluster:: The WARNING message is suppressed : 'No VP RawBanks found'
+BrunelInit                                           INFO Evt 49251,  Run 3147798,  Nr. in job = 3001
+SIMCOND.TimeOutChecker                               INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+BrunelInit                                           INFO Evt 96251,  Run 3147986,  Nr. in job = 4001
+BrunelInit                                           INFO Evt 44251,  Run 3147778,  Nr. in job = 5001
+SIMCOND_0.TimeOutChecker                             INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_4.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_5.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_3.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_2.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_1.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB_0.TimeOutChecker                                INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB.TimeOutChecker                                  INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+BrunelInit                                           INFO Evt 84751,  Run 3147940,  Nr. in job = 6001
+EventSelector                                        INFO Stream:EventSelector.DataStreamTool_2 Def:DATAFILE='/group/online/data_hlt/00031477_00000001_1.xdst' SVC='Gaudi::RootEvtSelector' OPT='READ'
+IODataManager                                        INFO Disconnect from dataset /group/online/data_hlt/00031477_00000002_1.xdst [CEA1F3EE-DD44-E311-BBB9-0025901D42C0]
+RootCnvSvc                                           INFO Removed disconnected IO  stream:CEA1F3EE-DD44-E311-BBB9-0025901D42C0 [/group/online/data_hlt/00031477_00000002_1.xdst]
+BrunelInit                                           INFO Evt 61751,  Run 3147848,  Nr. in job = 7001
+BrunelInit                                           INFO Evt 25251,  Run 3147702,  Nr. in job = 8001
+BrunelInit                                           INFO Evt 18751,  Run 3147676,  Nr. in job = 9001
+ApplicationMgr                                       INFO Application Manager Stopped successfully
+BrunelInit                                        SUCCESS ==================================================================
+BrunelInit                                        SUCCESS 10000 events processed
+BrunelInit                                        SUCCESS ==================================================================
+BrunelEventCount                                     INFO 10000 events processed
+BrunelEventCount                                  SUCCESS Booked 1 Histogram(s) : 1D=1 
+FstVPDecoding                                     SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/1/0
+FstVPDecoding                                     SUCCESS  #WARNINGS   = 36       Message = 'No VP RawBanks found'
+CreateUTLiteClusters                                 INFO Successfully processed 100 %
+CreateUTLiteClusters                              SUCCESS Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# valid banks"                                 |     71820 |      71820 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "# valid source ID"                             |     71820 |      71820 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "skipped Banks"                                 |         0 |          0 |     0.0000 |     0.0000 | 1.7977e+308 |-1.7977e+308 |
+RecoFstSeq                                           INFO == Accepted      399 events from    10000 (   3.99 %) ==
+EventLoopMgr                                         INFO Histograms converted successfully according to request.
+TransportSvc                                      SUCCESS  GEOMETRY ERRORS: 'Skip'     map has the size 0
+
+TransportSvc                                      SUCCESS  GEOMETRY ERRORS: 'Recover'  map has the size 0
+
+TransportSvc                                      SUCCESS  GEOMETRY ERRORS: 'Codes'    map has the size 0
+
+TransportSvc                                         INFO Reset the static pointer to DetDesc::IGeometyrErrorSvc
+RootCnvSvc                                           INFO Disconnected data IO:985FC469-DD44-E311-BAF0-00259073E3A8 [/group/online/data_hlt/00031477_00000001_1.xdst]
+ToolSvc                                              INFO Removing all tools created by ToolSvc
+PrChecker.Forward                                 SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/1/0
+PrChecker.Forward                                 SUCCESS  #WARNINGS   = 399      Message = 'Problem with MC associations for /Event/Fst/Track/Forward'
+PrChecker.Velo                                    SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/1/0
+PrChecker.Velo                                    SUCCESS  #WARNINGS   = 474      Message = 'Problem with MC associations for /Event/Fst/Track/Velo'
+ToolSvc.PrFTHitManager                               INFO Maximum number of hits 2186
+ToolSvc.PatPixelHitManager                           INFO Maximum number of Velo hits 619
+LLTCaloAlg.HcalTriggerAdcTool                     SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "getCaloBanks"                                  |     10000 |      10000 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+LLTCaloAlg.EcalTriggerAdcTool                     SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "getCaloBanks"                                  |     10000 |      10000 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+BrunelInit.BrunelMemory                           SUCCESS Booked 4 Histogram(s) : 1D=4 
+BrunelInit.BrunelMemory                           SUCCESS Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Delta Memory/MB"                               |      9990 |      20.54 |  0.0020561 |    0.20493 |      0.0000 |      20.484 |
+ | "Total Memory/MB"                               |     10000 |1.694643e+07 |     1694.6 |     2.0820 |      1662.0 |      1694.9 |
+BrunelInit.BrunelMemory                           SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/2/0
+BrunelInit.BrunelMemory                           SUCCESS  #WARNINGS   = 1        Message = 'Delta Memory for the event exceeds 3*sigma'
+BrunelInit.BrunelMemory                           SUCCESS  #WARNINGS   = 10       Message = 'Total Memory for the event exceeds 3*sigma'
+TimingAuditor.TIMER                                  INFO --------------------------------------------------------------------------------------------------
+TimingAuditor.TIMER                                  INFO This machine has a speed about   2.80 times the speed of a 2.8 GHz Xeon.
+TimingAuditor.TIMER                                  INFO Algorithm          (millisec) |    <user> |   <clock> |      min       max | entries | total (s) |
+TimingAuditor.TIMER                                  INFO --------------------------------------------------------------------------------------------------
+TimingAuditor.TIMER                                  INFO EVENT LOOP                    |    14.025 |    14.563 |    1.443    1273.0 |   10000 |   145.630 |
+TimingAuditor.TIMER                                  INFO  BrunelSequencer              |    13.814 |    14.350 |    1.290    1272.8 |   10000 |   143.496 |
+TimingAuditor.TIMER                                  INFO   Init                        |     0.872 |     0.879 |    0.310      40.0 |   10000 |     8.791 |
+TimingAuditor.TIMER                                  INFO    InitReprocSeq              |     0.315 |     0.327 |    0.109      38.1 |   10000 |     3.266 |
+TimingAuditor.TIMER                                  INFO     TESCheck                  |     0.297 |     0.309 |    0.094      38.0 |   10000 |     3.088 |
+TimingAuditor.TIMER                                  INFO     EventNodeKiller           |     0.011 |     0.012 |    0.009       0.1 |   10000 |     0.120 |
+TimingAuditor.TIMER                                  INFO    InitBrunelSeq              |     0.553 |     0.549 |    0.189      18.0 |   10000 |     5.486 |
+TimingAuditor.TIMER                                  INFO     BrunelInit                |     0.545 |     0.541 |    0.183      18.0 |   10000 |     5.413 |
+TimingAuditor.TIMER                                  INFO     BrunelEventCount          |     0.001 |     0.002 |    0.001       0.1 |   10000 |     0.017 |
+TimingAuditor.TIMER                                  INFO   PhysicsSeq                  |    12.933 |    13.463 |    0.955    1271.7 |   10000 |   134.626 |
+TimingAuditor.TIMER                                  INFO    CaloBanksHandler           |     0.000 |     0.002 |    0.001       0.0 |   10000 |     0.016 |
+TimingAuditor.TIMER                                  INFO    DecodeTriggerSeq           |     0.001 |     0.002 |    0.001       0.1 |   10000 |     0.015 |
+TimingAuditor.TIMER                                  INFO    Reco                       |     1.060 |     1.069 |    0.373      21.2 |   10000 |    10.691 |
+TimingAuditor.TIMER                                  INFO     RecoL0Seq                 |     0.000 |     0.002 |    0.001       0.0 |   10000 |     0.016 |
+TimingAuditor.TIMER                                  INFO     RecoHLTSeq                |     1.054 |     1.064 |    0.368      21.2 |   10000 |    10.639 |
+TimingAuditor.TIMER                                  INFO      RecoFstSeq               |     1.051 |     1.061 |    0.365      21.2 |   10000 |    10.609 |
+TimingAuditor.TIMER                                  INFO       LLTCaloAlg              |     0.863 |     0.873 |    0.337      21.2 |   10000 |     8.725 |
+TimingAuditor.TIMER                                  INFO       FstSelectGEC            |     0.006 |     0.008 |    0.006       0.0 |   10000 |     0.077 |
+TimingAuditor.TIMER                                  INFO       FstVPDecoding           |     0.034 |     0.036 |    0.019       0.2 |     474 |     0.017 |
+TimingAuditor.TIMER                                  INFO       FstPixel                |     0.158 |     0.150 |    0.013       1.1 |     474 |     0.071 |
+TimingAuditor.TIMER                                  INFO       HltPVsPV3D              |     0.095 |     0.089 |    0.015       1.1 |     474 |     0.042 |
+TimingAuditor.TIMER                                  INFO       FstSelectVeloTracks     |     0.063 |     0.040 |    0.019       0.2 |     399 |     0.016 |
+TimingAuditor.TIMER                                  INFO       UnpackMCParticle        |     3.640 |     3.649 |    0.129      20.6 |   10000 |    36.487 |
+TimingAuditor.TIMER                                  INFO       UnpackMCVertex          |     3.485 |     3.496 |    0.047      69.7 |   10000 |    34.962 |
+TimingAuditor.TIMER                                  INFO       CreateUTLiteClusters    |     0.188 |     0.192 |    0.130       0.8 |     399 |     0.076 |
+TimingAuditor.TIMER                                  INFO       PrVeloUT                |     0.238 |     0.272 |    0.036       1.3 |     399 |     0.109 |
+TimingAuditor.TIMER                                  INFO       FTRawBankDecoder        |     0.028 |     0.024 |    0.010       0.1 |     399 |     0.010 |
+TimingAuditor.TIMER                                  INFO       FstForward              |     0.248 |     0.254 |    0.014       1.6 |     399 |     0.101 |
+TimingAuditor.TIMER                                  INFO       SelectFwd1              |     0.018 |     0.019 |    0.011       0.0 |     399 |     0.008 |
+TimingAuditor.TIMER                                  INFO       SelectFwd2              |     0.018 |     0.015 |    0.009       0.0 |     399 |     0.006 |
+TimingAuditor.TIMER                                  INFO    Moni                       |     0.001 |     0.002 |    0.001       0.0 |   10000 |     0.016 |
+TimingAuditor.TIMER                                  INFO    MCLinks                    |     7.261 |     7.313 |    0.335      74.9 |   10000 |    73.134 |
+TimingAuditor.TIMER                                  INFO     MCLinksUnpackSeq          |     7.009 |     7.024 |    0.001      74.7 |   10000 |    70.239 |
+TimingAuditor.TIMER                                  INFO     MCLinksTrSeq              |     0.246 |     0.285 |    0.151      62.8 |   10000 |     2.846 |
+TimingAuditor.TIMER                                  INFO      PrLHCbID2MCParticle      |     0.242 |     0.281 |    0.147      62.8 |   10000 |     2.809 |
+TimingAuditor.TIMER                                  INFO    Check                      |     4.596 |     5.066 |    0.119    1265.5 |   10000 |    50.664 |
+TimingAuditor.TIMER                                  INFO     CheckPatSeq               |     4.592 |     5.064 |    0.117    1265.5 |   10000 |    50.636 |
+TimingAuditor.TIMER                                  INFO      PrChecker                |     4.588 |     5.060 |    0.113    1265.5 |   10000 |    50.598 |
+TimingAuditor.TIMER                                  INFO   Output                      |     0.001 |     0.002 |    0.001       0.0 |   10000 |     0.016 |
+TimingAuditor.TIMER                                  INFO --------------------------------------------------------------------------------------------------
+DataOnDemandSvc                                      INFO Handled "DataFault" incidents: 0/0/250000(Alg/Node/Total).
+ApplicationMgr                                       INFO Application Manager Finalized successfully
+ApplicationMgr                                       INFO Application Manager Terminated successfully
