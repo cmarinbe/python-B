@@ -10,7 +10,10 @@ m, merr, pt, p = np.genfromtxt(
     unpack=True
 )
 ns, bins = np.histogram(m)
-centres = bins[:-1] + (bins[1:] - bins[:-1]) / 2
-errs = np.sqrt(ns)
-plt.errorbar(centres, ns, yerr=errs, fmt='b.')
+widths = (bins[1:] - bins[:-1]) / 2
+centres = bins[:-1] + widths
+errs = 100 * np.sqrt(ns)
+plt.errorbar(centres, ns, xerr=widths, yerr=errs, fmt='b.')
+plt.xlabel(r'$m(B\to K^{*0}\mu\mu)$ [MeV/c$^2$]')
+plt.ylabel('#events')
 plt.savefig('mass2.pdf')
