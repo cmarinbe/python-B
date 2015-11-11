@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 B = namedtuple('B', ['m', 'merr', 'pt', 'p'])
 bs = []
 with open('B.txt') as f:
-    for line in f.readlines():
+    for line in f.readlines()[1:]:
         line = line.strip()
         values = line.split(',')
         actual_values = [float(v) for v in values]
